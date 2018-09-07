@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom';
 import createBrowserHistory from 'history/createBrowserHistory';
 import { createStore, createApp } from 'app';
-
+import 'antd/dist/antd.css';
 import './styles/index.scss';
 
 const { store, history } = createStore(createBrowserHistory(), {});

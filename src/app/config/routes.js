@@ -10,6 +10,11 @@ const AsyncUser = Loadable({
   loading: () => null,
 });
 
+const AsyncDemo = Loadable({
+  loader: () => import('views/demo'),
+  loading: () => null,
+});
+
 const routes = [{
   path: '/',
   exact: true,
@@ -17,6 +22,10 @@ const routes = [{
 }, {
   path: '/user',
   component: AsyncUser,
-}];
+},{
+  path: '/demo',
+  component: AsyncDemo,
+}
+];
 
 export default routes;
